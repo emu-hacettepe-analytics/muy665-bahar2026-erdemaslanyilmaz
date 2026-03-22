@@ -1,40 +1,116 @@
 ---
-title: "Hakkımda"
-sidebar: false 
+title: "HAKKIMDA"
+toc: true
+toc-location: left
 ---
 
-![](assets/images/vesikalik.jpeg){fig-align="center"}
+::: {.callout-note appearance="simple"}
+Makine mühendisliği altyapısını, üretim tecrübesi ve mühendislik yönetimi bakış açısıyla birleştiriyorum.\
+Savunma sanayinde veri odaklı süreç iyileştirme ve üretim optimizasyonu üzerine çalışıyorum.
+:::
 
-# Eğitim
+::: {style="text-align:center; margin-top: 20px;"}
+![](assets/images/veksikalık.jpeg){style="border-radius: 16px;" width="400"}
+:::
 
--   B.S., ................................., ....................................University, Turkey, 20xx - 20xx.
--   M.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
--   Ph.D.., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+::: {style="text-align:center; margin-top: 10px; color:#6e6e73;"}
+<strong>Erdem Aslanyılmaz</strong><br> Senior Production Engineer · MSc Student
+:::
 
-# İş Tecrübesi
+------------------------------------------------------------------------
 
-## Employements
+## 🎓 Eğitim
 
-1.  Firm xxx, position xx, year xxx
+::: {.callout-tip appearance="simple"}
+Akademik altyapım, mühendislik ve yönetim disiplinlerinin birleşimine dayanmaktadır.
+:::
 
-2.  Firm yyy, position yyy, year yyy
+-   **Hacettepe Üniversitesi**\
+    Mühendislik Yönetimi (Yüksek Lisans) \| 2026 – Devam Ediyor
 
-## Internships
+-   **Bartın Üniversitesi**\
+    Makine Mühendisliği (Lisans) \| 2018 – 2022\
+    GNO: 3.06 / 4.00
 
-1.  Firm aaa, position xx, year xxx
+------------------------------------------------------------------------
 
-2.  Firm bbb, position yyy, year yyy
+## 💼 İş Tecrübesi
 
-# Projects
+::: callout-note
+Üretim süreçleri, verimlilik ve operasyonel mükemmellik üzerine yoğunlaşmaktayım.
+:::
 
-1.  TUBİTAK 1001..........................
+### AYESAŞ \| Kıdemli Üretim Mühendisi
 
-# Publications
+2024 – Halen
 
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Ozturk, D. (2022) “UAV Routing for Reconnaissance Mission: A Multi-Objective Orienteering Problem with Time-Dependent Prizes and Multiple Connections”, Computers & Operations Research, 145: 105882.
+-   Karmaşık üretim süreçlerinin yönetimi\
+-   Operasyonel verimlilik stratejilerinin geliştirilmesi ve uygulanması
 
-# Competencies
+### Mege Teknik \| Üretim Mühendisi
 
-R, Quarto, Git, Python
+2022 – 2024
 
-# Hobbies
+-   Üretim hattı planlama\
+-   Teknik çizim kontrolü\
+-   İmalat süreçlerinin uçtan uca takibi
+
+------------------------------------------------------------------------
+
+## 🏭 Stajlar
+
+-   **Mege Teknik** — Stajyer Mühendis (2022)
+
+------------------------------------------------------------------------
+
+## 🚀 Projeler
+
+### TÜBİTAK 2209-A
+
+-   Slipiner çeliği üzerine titanyum kaplama ile yeni nesil havacılık malzemesi geliştirme\
+-   Proje TÜBİTAK tarafından desteklenmiştir
+
+### Elektrikli Araç Projesi — Bartın Teknoloji Kulübü
+
+-   Elektrikli araç tasarımı ve mekanik entegrasyon\
+-   Karbon fiber dış kabuk tasarımı ve üretimi
+
+------------------------------------------------------------------------
+
+## 🧠 Yetkinlikler
+
+::: {layout-ncol="2"}
+-   **CAD/CAM:** Siemens NX, Catia, SolidWorks, AutoCAD\
+-   **Ofis Araçları:** MS Excel (İleri Seviye), MS Office
+:::
+
+------------------------------------------------------------------------
+
+## 🎯 Hobiler
+
+-   Kültür & Sanat: Müzik, Tiyatro\
+-   Spor: Amatör branş sporları
+
+## 🌐 Sosyal Medya
+
+`<a href="`{=html}[Erdem Aslanyılmaz - AYESAŞ \| LinkedIn](https://tr.linkedin.com/in/erdem-aslany%C4%B1lmaz-b51819172?trk=public_profile_browsemap)[`"`{=html}](#0){style="font-size: 11pt;"}`target="_blank">`{=html}💼 LinkedIn</a>
+
+`<a href="`{=html}[erdemaslanyilmaz (Erdem Aslanyilmaz)](https://github.com/erdemaslanyilmaz)[`"`{=html}](#0){style="font-size: 11pt;"}`target="_blank">`{=html}💻 GitHub</a>
+
+## 🌐 Sosyal Medya
+
+-   💼 [LinkedIn](https://tr.linkedin.com/in/erdem-aslany%C4%B1lmaz-b51819172?trk=public_profile_browsemap)
+-   💻 [GitHub](https://github.com/erdemaslanyilmaz)
+
+## 📄 CV
+
+::: {style="text-align:center; margin-top:20px;"}
+<a href="assets/cv.pdf" download
+style="background-color:#1d1d1f; color:white; padding:12px 24px; text-decoration:none; border-radius:10px;"> CV'yi indir </a>
+:::
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right; margin-top: 50px; color: #8e8e93; font-size: 14px;"}
+<strong>Erdem Aslanyılmaz</strong><br> MÜY665 - İş Analitiği<br> 2026
+:::

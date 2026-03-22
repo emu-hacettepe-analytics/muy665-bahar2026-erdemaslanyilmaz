@@ -1,8 +1,68 @@
 ---
-title: "Erdem ASLANYILMAZ SAYFAMA HOSGELDINIZ"
-sidebar: false 
+title: "ERDEM ASLANYILMAZ"
+subtitle: "Senior Production Engineer | Engineering Management MSc Student"
+sidebar: false
+page-layout: article
+toc: false
 ---
 
-MUY660-D0E AnalitiDi dersi sayfama hoE geldiniz.
+# 👋 Merhaba, ben Erdem
 
-Bu analitik C'alD1EmalarD1mD1zD1 paylaED1yorum.
+Makine mühendisliği temelleri üzerine inşa ettiğim kariyerimi, şu anda **Hacettepe Üniversitesi** bünyesinde **Mühendislik Yönetimi** yüksek lisansı ile geliştirmekteyim.
+
+Savunma sanayinin yüksek hassasiyet gerektiren üretim ortamında **Kıdemli Üretim Mühendisi** olarak görev almakta, üretim süreçlerini **veri odaklı yaklaşımlar** ile optimize etmekteyim.
+
+------------------------------------------------------------------------
+
+::: {.callout-tip appearance="simple"}
+📌 **Güncel Çalışma:**\
+[MÜY665 Ödev 1: Video Özeti ve Veri Analizi](./portfolyo/calisma1.html)
+:::
+
+------------------------------------------------------------------------
+
+## 🚀 Ne Üzerinde Çalışıyorum?
+
+:::::: {layout-ncol="3"}
+::: {.callout-note appearance="minimal"}
+## 📊 Veri Analizi
+
+R ve Python kullanarak üretim verilerinden anlamlı içgörüler ve tahminleme modelleri oluşturuyorum.
+:::
+
+::: {.callout-note appearance="minimal"}
+## ⚙️ Üretim Optimizasyonu
+
+Savunma sanayi standartlarında süreç verimliliğini artırmaya yönelik çalışmalar yürütüyorum.
+:::
+
+::: {.callout-note appearance="minimal"}
+## 🧠 Mühendislik Yönetimi
+
+Teknik bilgi ile stratejik karar alma süreçlerini birleştiriyorum.
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## 🎯 Yaklaşımım
+
+::: callout-note
+Mühendislik problemlerine yalnızca teknik değil, aynı zamanda **veri temelli ve sistematik** bir bakış açısıyla yaklaşmayı hedefliyorum.
+:::
+
+Geleneksel mühendislik yöntemlerini modern veri analizi teknikleriyle birleştirerek daha **akıllı, sürdürülebilir ve optimize edilmiş sistemler** geliştirmeye odaklanıyorum.
+
+------------------------------------------------------------------------
+
+## 📌 Bu Site Hakkında
+
+Bu platform, akademik çalışmalarım (özellikle **MÜY665 - İş Analitiği**) ile profesyonel deneyimlerimi bir araya getirdiğim bir portfolyo niteliğindedir.
+
+Burada paylaştığım projeler, veri analizi ve mühendislik bilgisini entegre ettiğim çalışmaların bir yansımasıdır.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right; margin-top: 50px; color: #8e8e93; font-size: 14px;"}
+<strong>Erdem Aslanyılmaz</strong><br> MÜY665 - İş Analitiği<br> 2026
+:::

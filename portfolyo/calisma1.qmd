@@ -1,16 +1,169 @@
 ---
 title: "Çalışma 1"
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+    toc-location: left
+    page-layout: full  # 'article' yerine 'full' dene
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+# MÜY665 Ödev 1
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+## Video Özeti, Soru Hazırlama ve Veri Analizi
 
-## (a)
+::: callout-note
+Bu çalışma kapsamında video analizi ve veri temizleme süreçleri uygulanmıştır.
+:::
+
+## Giriş
+
+Bu çalışmada veri bilimi ve endüstri mühendisliği alanına yönelik seçilen bir video özetlenmiş, video içeriğine dayalı olarak bir açık uçlu soru ve bir çoktan seçmeli soru hazırlanmıştır. Ayrıca `dslabs` paketinde yer alan `polls_us_election_2016` veri seti kullanılarak eksik verilerin analizi gerçekleştirilmiş ve belirlenen kurallara göre veri temizleme işlemleri uygulanmıştır.
+
+## 1. 📺 Video İncelemesi
+
+### 1.1. Seçilen Video
+
+Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Kerem Demirtaş & Erdi Daşdemir
+
+### 1.2. Video Özeti
+
+Videoda veri bilimi ile endüstri mühendisliği arasındaki ilişki ele alınmaktadır. Konuşmacılar, veri biliminin karar verme süreçlerinde nasıl kritik bir rol oynadığını ve endüstri mühendislerinin bu alanda nasıl konumlandığını açıklamaktadır. Özellikle veri toplama, veri analizi ve modelleme süreçlerinin iş dünyasındaki uygulamalarına değinilmektedir.
+
+Ayrıca, veri bilimi alanında başarılı olmak için yalnızca teknik bilgi değil, aynı zamanda problem çözme becerisi ve analitik düşünmenin de önemli olduğu vurgulanmaktadır. Endüstri mühendisliği eğitiminin bu becerileri kazandırmada önemli bir avantaj sağladığı belirtilmiştir.
+
+### 1.3. Açık Uçlu Soru
+
+**Soru:**\
+Veri biliminin endüstri mühendisliği içindeki rolü nedir ve bu iki alan birbirini nasıl tamamlar?
+
+::: {.callout-tip collapse="true"}
+## Cevabı görmek için tıklayın
+
+Veri bilimi, endüstri mühendisliğinde karar verme süreçlerini destekleyen önemli bir araçtır. Endüstri mühendisliği sistemleri optimize etmeye odaklanırken, veri bilimi bu sistemlerden elde edilen verileri analiz ederek daha doğru ve veriye dayalı kararlar alınmasını sağlar.
+:::
+
+### 1.4. Çoktan Seçmeli Soru
+
+**Soru:**\
+Aşağıdakilerden hangisi veri biliminin temel amaçlarından biridir?
+
+A)  Sadece veri depolamak\
+B)  Verileri analiz ederek anlamlı sonuçlar çıkarmak\
+C)  Yazılım geliştirmek\
+D)  Sadece grafik çizmek
+
+::: {.callout-tip collapse="true"}
+## Doğru cevap için tıklayın
+
+**Doğru Cevap:** B
+
+**Açıklama:**\
+Veri bilimi, ham veriyi anlamlı bilgiye dönüştürmeyi amaçlar.
+:::
+
+## 2. 📊 Veri Analizi Uygulaması
+
+Bu bölümde, verilen veri seti üzerinde eksik verilerin incelenmesi ve dönüştürülmesi amacıyla analizler gerçekleştirilmiştir.
+
+### 2.1 Veri Setinin Yüklenmesi
 
 ```{r}
-1 + 1
+#| message: false
+library(dslabs)
+library(dplyr)
+library(tidyr)
 ```
 
-## (b)
+### 2.2 Kişisel Bilgilerin Tanımlanması
+
+```{r}
+
+my_first <- "Erdem"
+my_birth_year <- 1999
+```
+
+### 2.3 k Değerinin Hesaplanması
+
+::: callout-note
+k değeri kişiye özel hesaplanmıştır.
+:::
+
+```{r}
+
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+print(paste("Hesaplanan k degeri:", k))
+```
+
+### 2.4 Verilerin Çağrılması
+
+```{r}
+
+library(dslabs)
+data("polls_us_election_2016")
+original_data <- polls_us_election_2016
+
+# k kuralına göre görüntüleme (k çift ise başı, tek ise sonu)
+if (k %% 2 == 0) {
+  head(original_data, k)
+} else {
+  tail(original_data, k)
+}
+```
+
+### 2.5 Hataların Düzeltilmesi
+
+::: callout-important
+Bu bölümde eksik veriler analiz edilerek dönüştürülmüştür.
+:::
+
+```{r}
+# Toplam NA sayısı
+print(paste("Toplam NA sayısı:", sum(is.na(original_data))))
+
+# Sütun başına NA sayıları (İlk 8 sütun)
+na_counts <- sort(colSums(is.na(original_data)), decreasing = TRUE)
+head(na_counts, 8)
+
+new_data <- original_data %>%
+
+  mutate(across(where(is.numeric), ~replace_na(.x, my_birth_year + k))) %>%
+  mutate(across(where(~is.character(.x) | is.factor(.x)),
+                ~replace_na(as.character(.x), paste0(my_first, "_", k))))
+```
+
+### 2.6 Kontrol ve Doğrulama
+
+```{r}
+
+# Yeni veri çerçevesi için k kuralına göre görüntüleme
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+# Toplam NA sayısı 0 çıkmalı
+print(paste("Yeni veri setindeki toplam NA:", sum(is.na(new_data))))
+
+# Doğrulama (Sonuç FALSE çıkmalı)
+print(anyNA(new_data))
+```
+
+## 3. Sonuç
+
+Bu çalışmada video içeriği analiz edilmiş ve bu içerik üzerinden ölçme soruları hazırlanmıştır. Veri analizi kısmında ise eksik veriler tespit edilmiş ve belirlenen kurallara göre dönüştürülerek veri seti temizlenmiştir. Yapılan kontroller sonucunda yeni veri setinde eksik değer kalmadığı doğrulanmıştır.
+
+## 4. Yapay Zeka Kullanım Beyanı
+
+Bu ödev hazırlanırken içerik planlaması, başlıkların oluşturulması ve R kodlarının düzenlenmesi aşamalarında yapay zeka desteğinden yararlanılmıştır. Üretilen içerikler gözden geçirilmiş ve ödeve uygun hale getirilmiştir.
+
+**Kullanılan prompt:**\
+"Bu ödev için Quarto üzerinde düzenli bir rapor yapısı oluştur. Veri analizi bölümünde istenen R kodlarını tek parça halinde düzenle ve video özeti ile soru hazırlama bölümleri için akademik bir içerik oluştur."
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right; margin-top: 60px; font-size: 14px; color: #8e8e93;"}
+<strong>Erdem Aslanyılmaz</strong><br> İş Analitiği - MÜY665<br> 2026
+:::

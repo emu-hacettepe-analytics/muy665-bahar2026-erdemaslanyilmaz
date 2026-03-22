@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "[xxxx]'in Analitik Labı"
+  title: "Erdem Aslanyılmaz"
   navbar:
     search: true
     left:
@@ -22,11 +22,9 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/erdemaslanyilmaz
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://www.linkedin.com/in/erdem-aslanyilmaz
 
   sidebar:
     - title: "Çalışmalar"
@@ -45,13 +43,10 @@ website:
     border: true
 format:
   html:
+    theme: lux
+    css: styles.css
     toc: true
     toc-location: left
-    theme: 
-      light: simplex 
-      dark: cyborg
-    css: styles.css
-
-
+    smooth-scroll: true
+    
 editor: visual
-
