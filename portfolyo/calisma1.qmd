@@ -1,5 +1,5 @@
 ---
-title: "Çalışma 1"
+title: ""
 format:
   html:
     theme: lux
@@ -11,7 +11,7 @@ format:
 
 # MÜY665 Ödev 1
 
-## Video Özeti, Soru Hazırlama ve Veri Analizi
+## Video Özeti ve Veri Analizi
 
 ::: callout-note
 Bu çalışma kapsamında video analizi ve veri temizleme süreçleri uygulanmıştır.
@@ -71,6 +71,8 @@ Bu bölümde, verilen veri seti üzerinde eksik verilerin incelenmesi ve dönü�
 
 ```{r}
 #| message: false
+#| warning: false
+
 library(dslabs)
 library(dplyr)
 library(tidyr)

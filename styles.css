@@ -168,3 +168,12 @@ blockquote {
   color: #555;
   border-radius: 10px;
 }
+.soft-box {
+  background: #fbfbfd;
+  border: 1px solid #e5e5e7;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  padding: 18px 20px;
+  margin: 16px 0;
+  color: #3a3a3c;
+}
