@@ -4,9 +4,10 @@ toc: true
 toc-location: left
 ---
 
-::: {.callout-note appearance="simple"}
-Makine mühendisliği altyapısını, üretim tecrübesi ve mühendislik yönetimi bakış açısıyla birleştiriyorum.\
-Savunma sanayinde veri odaklı süreç iyileştirme ve üretim optimizasyonu üzerine çalışıyorum.
+::: soft-box
+Makine mühendisliği altyapısını, üretim tecrübesi ve mühendislik yönetimi bakış açısıyla birleştiriyorum.
+
+Savunma saniye veri odakli süreç iyileştirme ve üretim optimizasyonu üzerine çalışıyorum.
 :::
 
 ::: {style="text-align:center; margin-top: 20px;"}
