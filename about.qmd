@@ -93,12 +93,6 @@ Akademik altyapım, mühendislik ve yönetim disiplinlerinin birleşimine dayanm
 
 ## 🌐 Sosyal Medya
 
-`<a href="`{=html}[Erdem Aslanyılmaz - AYESAŞ \| LinkedIn](https://tr.linkedin.com/in/erdem-aslany%C4%B1lmaz-b51819172?trk=public_profile_browsemap)[`"`{=html}](#0){style="font-size: 11pt;"}`target="_blank">`{=html}💼 LinkedIn</a>
-
-`<a href="`{=html}[erdemaslanyilmaz (Erdem Aslanyilmaz)](https://github.com/erdemaslanyilmaz)[`"`{=html}](#0){style="font-size: 11pt;"}`target="_blank">`{=html}💻 GitHub</a>
-
-## 🌐 Sosyal Medya
-
 -   💼 [LinkedIn](https://tr.linkedin.com/in/erdem-aslany%C4%B1lmaz-b51819172?trk=public_profile_browsemap)
 -   💻 [GitHub](https://github.com/erdemaslanyilmaz)
 
