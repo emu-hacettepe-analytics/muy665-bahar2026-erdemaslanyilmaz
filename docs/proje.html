@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Proje X (proje adını yazınız) – [xxxx]’in Analitik Labı</title>
+<title>Proje X (proje adını yazınız) – Erdem Aslanyılmaz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,14 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b09ffb0c710b10090e35f4f5c8599541.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-5b22ffe13dd2aa798062e3956142f8dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b09ffb0c710b10090e35f4f5c8599541.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9ee8342cdd1c42117ce06b6284d41c91.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,174 +68,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -249,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">[xxxx]’in Analitik Labı</span>
+    <span class="navbar-title">Erdem Aslanyılmaz</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -287,11 +122,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools tools-wide">
-    <a href="https://twitter.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://linkedin.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/erdemaslanyilmaz" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/erdem-aslanyilmaz" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -304,22 +137,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#proje-genel-bakış-ve-kapsamı" id="toc-proje-genel-bakış-ve-kapsamı" class="nav-link active" data-scroll-target="#proje-genel-bakış-ve-kapsamı"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı</a></li>
-  <li><a href="#veri" id="toc-veri" class="nav-link" data-scroll-target="#veri"><span class="header-section-number">2</span> Veri</a>
-  <ul class="collapse">
-  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</a></li>
-  <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</a></li>
-  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">2.3</span> Tercih Sebebi</a></li>
-  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme"><span class="header-section-number">2.4</span> Ön İşleme</a></li>
-  </ul></li>
-  <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz"><span class="header-section-number">3</span> Analiz</a>
-  <ul class="collapse">
-  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</a></li>
-  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.2</span> Trend Analizi</a></li>
-  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.3</span> Model Uydurma</a></li>
-  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.4</span> Sonuçlar</a></li>
-  </ul></li>
-  <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</a></li>
+  <li><a href="#gerekli-paketler" id="toc-gerekli-paketler" class="nav-link active" data-scroll-target="#gerekli-paketler"><span class="header-section-number">1</span> Gerekli paketler</a></li>
+  <li><a href="#veri-seti" id="toc-veri-seti" class="nav-link" data-scroll-target="#veri-seti"><span class="header-section-number">2</span> Veri seti</a></li>
+  <li><a href="#türetilmiş-değişkenler" id="toc-türetilmiş-değişkenler" class="nav-link" data-scroll-target="#türetilmiş-değişkenler"><span class="header-section-number">3</span> Türetilmiş değişkenler</a></li>
+  <li><a href="#tema" id="toc-tema" class="nav-link" data-scroll-target="#tema"><span class="header-section-number">4</span> Tema</a></li>
+  <li><a href="#grafik-1" id="toc-grafik-1" class="nav-link" data-scroll-target="#grafik-1"><span class="header-section-number">5</span> Grafik 1</a></li>
+  <li><a href="#grafik-2" id="toc-grafik-2" class="nav-link" data-scroll-target="#grafik-2"><span class="header-section-number">6</span> Grafik 2</a></li>
+  <li><a href="#grafik-3---endeks" id="toc-grafik-3---endeks" class="nav-link" data-scroll-target="#grafik-3---endeks"><span class="header-section-number">7</span> Grafik 3 - Endeks</a></li>
+  <li><a href="#grafik-4" id="toc-grafik-4" class="nav-link" data-scroll-target="#grafik-4"><span class="header-section-number">8</span> Grafik 4</a></li>
+  <li><a href="#poster-metin-kutuları" id="toc-poster-metin-kutuları" class="nav-link" data-scroll-target="#poster-metin-kutuları"><span class="header-section-number">9</span> Poster metin kutuları</a></li>
+  <li><a href="#poster-başlığı" id="toc-poster-başlığı" class="nav-link" data-scroll-target="#poster-başlığı"><span class="header-section-number">10</span> Poster başlığı</a></li>
+  <li><a href="#poster-yerleşimi" id="toc-poster-yerleşimi" class="nav-link" data-scroll-target="#poster-yerleşimi"><span class="header-section-number">11</span> Poster yerleşimi</a></li>
+  <li><a href="#posteri-göster" id="toc-posteri-göster" class="nav-link" data-scroll-target="#posteri-göster"><span class="header-section-number">12</span> Posteri göster</a></li>
+  <li><a href="#png-olarak-kaydet" id="toc-png-olarak-kaydet" class="nav-link" data-scroll-target="#png-olarak-kaydet"><span class="header-section-number">13</span> PNG olarak kaydet</a></li>
   </ul>
 </nav>
 </nav>
@@ -329,7 +159,6 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -350,55 +179,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Projemizle ilgili güncellemelerden haberdar olmak için bu xxxxx bağlantısındaki proje sayfamızı takip edin.</strong></p>
-<p>(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)</p>
-<section id="proje-genel-bakış-ve-kapsamı" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı</h1>
-<p>xxxxxx</p>
+<section id="gerekli-paketler" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Gerekli paketler</h1>
+<p>install.packages(c(“ggplot2”, “patchwork”, “grid”, “scales”, “dplyr”))</p>
+<p>library(ggplot2) library(patchwork) library(grid) library(scales) library(dplyr)</p>
 </section>
-<section id="veri" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Veri</h1>
-<p>xxxxxx</p>
-<section id="veri-kaynağı" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</h2>
-<p>xxxxxx</p>
+<section id="veri-seti" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Veri seti</h1>
+<p>trafik &lt;- data.frame( yil = 2009:2024, nufus = c(72561312,73722988,74724269,75627384,76667864,77695904,78741053,79814871, 80810525,82003882,83154997,83614362,84680273,85279553,85372377,85664944), arac_sayisi = c(14316700,15095603,16089528,17033413,17939447,18828721,19994472, 21090424,22218945,22865921,23156975,24144857,25249119,26482847, 28740492,31301389), kaza_sayisi = c(1053346,1106201,1228928,1296634,1207354,1199010,1313359,1182491, 1202716,1229364,1168144,983808,1186353,1232957,1314136,1444026) )</p>
 </section>
-<section id="veri-hakkında-genel-bilgiler" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</h2>
-<p>xxxxxx</p>
+<section id="türetilmiş-değişkenler" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Türetilmiş değişkenler</h1>
+<p>trafik &lt;- trafik %&gt;% mutate( kaza_10000_arac = kaza_sayisi / arac_sayisi * 10000, nufus_endeks = nufus / first(nufus) * 100, arac_endeks = arac_sayisi / first(arac_sayisi) * 100, kaza_endeks = kaza_sayisi / first(kaza_sayisi) * 100 )</p>
 </section>
-<section id="tercih-sebebi" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="tercih-sebebi"><span class="header-section-number">2.3</span> Tercih Sebebi</h2>
-<p>xxxxxx</p>
+<section id="tema" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Tema</h1>
+<p>tema &lt;- theme_minimal(base_size = 11) + theme( plot.title = element_text(face = “bold”, size = 13, color = “#0F172A”), axis.title = element_text(size = 10), axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor = element_blank() )</p>
 </section>
-<section id="ön-işleme" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">2.4</span> Ön İşleme</h2>
-<p>xxxxxx</p>
+<section id="grafik-1" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Grafik 1</h1>
+<p>g1 &lt;- ggplot(trafik, aes(yil, arac_sayisi)) + geom_line(linewidth = 1.1, color = “#2563EB”) + geom_point(size = 2, color = “#2563EB”) + scale_y_continuous(labels = label_number(big.mark = “.”)) + scale_x_continuous(breaks = trafik$yil) + labs(title = “Yıllara Göre Araç Sayısı”, x = “Yıl”, y = “Araç Sayısı”) + tema</p>
 </section>
+<section id="grafik-2" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Grafik 2</h1>
+<p>g2 &lt;- ggplot(trafik, aes(yil, kaza_sayisi)) + geom_line(linewidth = 1.1, color = “#DC2626”) + geom_point(size = 2, color = “#DC2626”) + scale_y_continuous(labels = label_number(big.mark = “.”)) + scale_x_continuous(breaks = trafik$yil) + labs(title = “Yıllara Göre Toplam Kaza Sayısı”, x = “Yıl”, y = “Kaza Sayısı”) + tema</p>
 </section>
-<section id="analiz" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Analiz</h1>
-<p>xxxxxx</p>
-<section id="keşifsel-veri-analizi" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</h2>
-<p>xxxxxx</p>
+<section id="grafik-3---endeks" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Grafik 3 - Endeks</h1>
+<p>endeks_long &lt;- trafik %&gt;% select(yil, nufus_endeks, arac_endeks, kaza_endeks) %&gt;% tidyr::pivot_longer( cols = -yil, names_to = “degisken”, values_to = “endeks” ) %&gt;% mutate( degisken = recode( degisken, “nufus_endeks” = “Nüfus”, “arac_endeks” = “Araç Sayısı”, “kaza_endeks” = “Kaza Sayısı” ) )</p>
+<p>g3 &lt;- ggplot(endeks_long, aes(yil, endeks, color = degisken)) + geom_line(linewidth = 1.2) + geom_point(size = 2) + scale_x_continuous(breaks = trafik$yil) + labs( title = “2009=100 Endeksine Göre Değişim”, x = “Yıl”, y = “Endeks Değeri”, color = “Değişken” ) + tema + theme(legend.position = “bottom”)</p>
 </section>
-<section id="trend-analizi" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.2</span> Trend Analizi</h2>
-<p>xxxxxx</p>
+<section id="grafik-4" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Grafik 4</h1>
+<p>g4 &lt;- ggplot(trafik, aes(yil, kaza_10000_arac)) + geom_line(linewidth = 1.1, color = “#16A34A”) + geom_point(size = 2, color = “#16A34A”) + scale_x_continuous(breaks = trafik$yil) + labs(title = “10.000 Araç Başına Kaza Sayısı”, x = “Yıl”, y = “Kaza Sayısı”) + tema</p>
 </section>
-<section id="model-uydurma" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.3</span> Model Uydurma</h2>
-<p>xxxxxx</p>
+<section id="poster-metin-kutuları" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Poster metin kutuları</h1>
+<p>amac &lt;- ggplot() + theme_void() + annotate(“label”, x = 0.5, y = 0.5, label = “PROJE AMACI’de 2009–2024 yılları arasında nüfus artışı,kayıtlı araç sayısı ve trafik kazaları arasındakiincelenmiştir., bu üç göstergenin zaman içindeki değişiminive trafik riskindeki değişimi yorumlamaktır.”, size = 4.1, fill = “#F8FAFC”, color = “#111827”, label.size = 0.4, hjust = 0.5)</p>
+<p>veri &lt;- ggplot() + theme_void() + annotate(“label”, x = 0.5, y = 0.5, label = “VERİ SETİ VE YÖNTEM• Veri kaynağı: TÜİK• Dönem: 2009–2024• Gözlem sayısı: 16 yıl• Araçlar: R, ggplot2, dplyr:, araç sayısı, toplam kaza sayısı,ve yaralı göstergeleri.”, size = 4.1, fill = “#F8FAFC”, color = “#111827”, label.size = 0.4, hjust = 0.5)</p>
+<p>bulgular &lt;- ggplot() + theme_void() + annotate(“label”, x = 0.5, y = 0.5, label = “TEMEL BULGULAR✓ Araç sayısı nüfustan daha hızlı artmıştır.✓ Kaza sayısı her yıl aynı hızda artmamış,yıllarda dalgalanma göstermiştir.✓ 2020 yılında pandemi nedeniyle kaza sayısındadüşüş görülmüştür.✓ Araç başına düşen kaza riski bazı dönemlerde azalmıştır.”, size = 4.1, fill = “#EFF6FF”, color = “#111827”, label.size = 0.4, hjust = 0.5)</p>
+<p>sonuc &lt;- ggplot() + theme_void() + annotate(“label”, x = 0.5, y = 0.5, label = “SONUÇgüvenliği yalnızca araç sayısı ile açıklanamaz., denetim, sürücü davranışı, teknoloji vedönemler de önemli rol oynamaktadır.nedenle analizlerde mutlak göstergelerle birlikteve araç sayısına göre normalize edilmiş oranlardeğerlendirilmelidir.”, size = 4.1, fill = “#F0FDF4”, color = “#111827”, label.size = 0.4, hjust = 0.5)</p>
 </section>
-<section id="sonuçlar" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.4</span> Sonuçlar</h2>
-<p>xxxxxx</p>
+<section id="poster-başlığı" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Poster başlığı</h1>
+<p>baslik &lt;- ggplot() + theme_void() + annotate(“text”, x = 0.5, y = 0.65, label = “Türkiye’de Nüfus, Araç Artışı ve Trafik Kazaları İlişkisi (2009–2024)”, size = 8, fontface = “bold”, color = “#0F172A”) + annotate(“text”, x = 0.5, y = 0.25, label = “Erdem Aslanyılmaz • Oğuz Şenel • Hacettepe Üniversitesi”, size = 4.5, color = “#334155”)</p>
 </section>
+<section id="poster-yerleşimi" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Poster yerleşimi</h1>
+<p>poster &lt;- baslik / ((amac | g1 | bulgular) / (veri | g2 | sonuc) / (g3 | g3 | g4)) + plot_layout(heights = c(0.18, 1, 1, 1.15)) + plot_annotation( theme = theme( plot.background = element_rect(fill = “#E5E7EB”, color = NA), plot.margin = margin(20, 20, 20, 20) ) )</p>
 </section>
-<section id="sonuçlar-ve-ana-çıkarımlar" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</h1>
-<p>xxxxxx</p>
+<section id="posteri-göster" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Posteri göster</h1>
+<p>poster</p>
+</section>
+<section id="png-olarak-kaydet" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> PNG olarak kaydet</h1>
+<p>ggsave( filename = “trafik_analizi_poster.png”, plot = poster, width = 20, height = 12, dpi = 300, bg = “#E5E7EB” )</p>
 
 
 </section>
@@ -406,19 +242,6 @@ ul.task-list li input[type="checkbox"] {
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -835,4 +658,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
