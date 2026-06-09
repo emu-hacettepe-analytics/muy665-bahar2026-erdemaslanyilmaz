@@ -333,6 +333,7 @@ Sonuç olarak, Türkiye’de artan araçlaşmaya rağmen trafik güvenliği gös
 
 ### Kullanılan Araçlar ve Not
 
+
 Bu proje R programlama dili kullanılarak hazırlanmış, Quarto ile raporlanmış ve GitHub Pages üzerinde yayımlanmıştır.
 
 Bu çalışmada analiz sürecini desteklemek amacıyla yapay zekâ araçlarından yararlanılmıştır. Nihai değerlendirme, yorumlama ve yazım aşamaları tarafımızca gözden geçirilmiştir.
